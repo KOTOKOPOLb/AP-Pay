@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>SP_tools</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <FileVersion>1.0</FileVersion>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <PackageIcon>ap card.png</PackageIcon>
+    <Product>AP Pay</Product>
+    <Authors>KOTOKOPOLb</Authors>
+    <Version>1.0</Version>
+    <PackageId>AP Pay</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Home\Desktop\ap card.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
