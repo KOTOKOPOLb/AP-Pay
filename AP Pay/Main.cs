@@ -48,7 +48,7 @@ namespace SP_tools
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", btoken);
-                StringContent content = new StringContent("{\"receiver\":" + " \"" + textBox1.Text + "\"," + " \"amount\": " + textBox2.Text + ", " + "\"comment\":" + " \"" + textBox3.Text + "\",", Encoding.UTF8, "application/json");
+                StringContent content = new StringContent("{\"receiver\":" + " \"" + textBox1.Text + "\"," + " \"amount\": " + textBox2.Text + ", " + "\"comment\":" + " \"" + textBox3.Text + "\"}", Encoding.UTF8, "application/json");
                 toolStripStatusLabel1.Text = "Идёт запрос...";
                 HttpResponseMessage response = await client.PostAsync("https://spworlds.ru/api/public/transactions", content);
                 if (response.IsSuccessStatusCode)
