@@ -4,7 +4,11 @@
 
 ## Установка
 
-Просто [скачай](https://github.com/KOTOKOPOlb/AP-Pay/releases/tag/Releases), распакуй и запусти!
+Просто [скачай](https://github.com/KOTOKOPOlb/AP-Pay/releases/tag/Releases) и запусти!
+
+## To Do
+
+- Сделать тёмную тему или полную кастомизацию
 
 ## Лицензия
 
