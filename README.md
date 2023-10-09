@@ -10,6 +10,8 @@
 
 - Сделать тёмную тему или полную кастомизацию
 
+- Сделать для Linux
+
 ## Лицензия
 
 [MIT](https://choosealicense.com/licenses/mit/)
