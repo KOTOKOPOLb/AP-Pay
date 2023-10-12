@@ -37,6 +37,7 @@
             label1 = new Label();
             label2 = new Label();
             button2 = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // tabPage1
@@ -69,7 +70,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 80);
+            button1.Anchor = AnchorStyles.Bottom;
+            button1.Location = new Point(12, 96);
             button1.Name = "button1";
             button1.Size = new Size(146, 23);
             button1.TabIndex = 6;
@@ -80,6 +82,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
             label1.Size = new Size(48, 15);
@@ -89,6 +92,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(12, 44);
             label2.Name = "label2";
             label2.Size = new Size(69, 15);
@@ -97,7 +101,8 @@
             // 
             // button2
             // 
-            button2.Location = new Point(194, 80);
+            button2.Anchor = AnchorStyles.Bottom;
+            button2.Location = new Point(194, 96);
             button2.Name = "button2";
             button2.Size = new Size(146, 23);
             button2.TabIndex = 9;
@@ -105,11 +110,25 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.BackColor = Color.Transparent;
+            checkBox1.Location = new Point(12, 70);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(95, 19);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Тёмная тема";
+            checkBox1.UseVisualStyleBackColor = false;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // Cards
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(352, 115);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(352, 131);
+            Controls.Add(checkBox1);
             Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,9 +137,9 @@
             Controls.Add(textBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new Size(368, 154);
+            MaximumSize = new Size(368, 170);
             MinimizeBox = false;
-            MinimumSize = new Size(368, 154);
+            MinimumSize = new Size(368, 170);
             Name = "Cards";
             Text = "Карта";
             ResumeLayout(false);
@@ -136,5 +155,6 @@
         private Button button2;
         public TextBox textBox2;
         public TextBox textBox1;
+        public CheckBox checkBox1;
     }
 }

@@ -57,6 +57,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(12, 44);
             label1.Name = "label1";
             label1.Size = new Size(84, 15);
@@ -99,6 +100,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(12, 73);
             label2.Name = "label2";
             label2.Size = new Size(93, 15);
@@ -108,6 +110,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(12, 100);
             label3.Name = "label3";
             label3.Size = new Size(87, 15);
@@ -117,6 +120,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Location = new Point(12, 16);
             label4.Name = "label4";
             label4.Size = new Size(77, 15);
